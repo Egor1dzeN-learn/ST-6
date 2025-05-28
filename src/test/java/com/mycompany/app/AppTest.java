@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
 import java.awt.*;
 import java.util.*;
-import java.util.List;
 
 public class AppTest {
     private Game game;
@@ -83,7 +82,7 @@ public class AppTest {
         char[] board = {'X','O',' ',' ','X','O','X',' ',' '};
         ArrayList<Integer> moves = new ArrayList<>();
         game.generateMoves(board, moves);
-        assertEquals(List.of(2, 3, 7, 8), moves);
+        assertEquals(Arrays.asList(2, 3, 7, 8), moves);
     }
 
     @Test
